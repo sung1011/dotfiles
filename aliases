@@ -1,0 +1,34 @@
+# git
+    alias gacp="git add .;git commit -m 'ig:';git push"
+    alias glacp="git pull;git add .;git commit -m 'ig:';git push"
+
+# docker
+    alias dk='docker'
+    alias dki='docker image'
+    alias dkc='docker container'
+    alias dkcp='docker-compose'
+
+# k8s
+    alias ks='kubectl'
+    alias mnk='minikube'
+
+# fzf
+    alias vf='vim $(fzf)'
+
+# link
+    alias readlink='greadlink'
+
+# bat
+    alias cat='bat --paging=never --plain'
+
+# z
+    command -v z > /dev/null && alias cd='z'
+
+# exa
+    alias ls='exa'
+
+# md5
+    command -v md5sum > /dev/null || alias md5sum="md5"
+
+# path
+    alias path='echo -e ${PATH//:/\\n}'

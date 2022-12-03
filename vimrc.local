@@ -1,0 +1,44 @@
+set shell=bash\ -i
+filetype plugin on
+syntax on
+set nospell
+set encoding=utf-8
+set wrap
+
+"tagbar
+"autocmd VimEnter * nested :TagbarOpen
+
+" syntastic
+let g:syntastic_always_populate_loc_list = 0
+let g:syntastic_auto_loc_list = 0
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0
+
+" colorscheme
+"let g:solarized_termcolors=16
+color fx "Load a colorscheme
+
+set foldmethod=manual "不折叠 另需要手动修改PIV/syntax/php.vim
+let g:DisableAutoPHPFolding = 1
+let g:PIVAutoClose = 1
+
+set nobackup " 不备份
+
+" keybindings
+" - map operate
+let mapleader = ","
+map <leader>b :buffers<cr>
+map <leader>1 :b1<cr>
+map <leader>2 :b2<cr>
+map <leader>3 :b3<cr>
+map <leader>4 :b4<cr>
+map <leader>5 :b5<cr>
+map <leader>6 :b6<cr>
+map <leader>d :bd<cr>
+map <leader>. :bn<cr>
+map <leader>m :bp<cr>
+map <leader>w :w<cr>
+map <leader>W :wq<cr>
+map <leader>q :q<cr>
+map <leader>Q :q!<cr>
+map <leader>f :Ack
